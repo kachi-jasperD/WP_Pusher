@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* styling of the Navigation menu & Logo */
+body {
+  min-height: 100vh;
+  background: #f6f8fb;
+}
+.container {
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #1d2c3c;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  align-items: center;
+}
+.navigation-menu ul {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+.navigation-list li {
+  list-style: none;
+  text-transform: capitalize;
+}
+a {
+  text-decoration: none;
+  color: #1d2c3c;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.active a {
+  outline: 2px solid #646e7a;
+  outline-offset: 13px;
+  border-radius: 1px;
+}
+.underline {
+  margin: auto;
+  /* width: 1358px; */
+  width: 1450px;
+  height: 2px;
+  background: #e0e6ea;
+  margin-bottom: 2rem;
+}
+
+/* End of the Styling of the Navigation menu & Logo */
+
+/* Styling of the content section */
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 892px;
+  /* height: calc(845px - 2rem); */
+  /* height: calc(645px - 2rem); */
+  margin: auto;
+}
+/* End of styling of the content section */
+
+/* Styling of the Check-out Section */
+.checkout-form {
+  display: grid;
+  background: white;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  width: 161px;
+  height: 54px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  text-decoration-skip-ink: none;
+  text-shadow: 0px 2px #00000040;
+  text-transform: capitalize;
+  padding-top: 2rem;
+}
+
+p {
+  height: 34px;
+  margin-bottom: 20px;
+}
+p .circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #548bc5;
+  padding: 15px;
+  color: #548bc5;
+  text-align: center;
+  line-height: 1px;
+}
+p .numbers {
+  color: #548bc5;
+  position: relative;
+  top: -11px;
+  left: -22px;
+}
+p .text {
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.1599999964237213px;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+}
+.col-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#email {
+  width: 370px;
+  height: 36px;
+  position: relative;
+  top: 30px;
+  left: -40px;
+  border-radius: 5px 0px 0px 0px;
+}
+
+.input.email label {
+  width: 370px;
+  height: 600px;
+  border-radius: 5px 0px 0px 0px;
+}
+
+label {
+  width: 187px;
+  height: 17px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+}
+input {
+  width: 227px;
+  height: 36px;
+  top: 408px;
+  left: 311px;
+  gap: 0px;
+  border-radius: 4px 0px 0px 0px;
+  border: transparent;
+  opacity: 0px;
+  background: #edeff2;
+}
+::placeholder {
+  width: 187px;
+  height: 17px;
+  top: 417px;
+  left: 324px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #646e7a;
+  padding: 19px 15px;
+}
+.payment-info {
+  width: 580px;
+  height: 154px;
+  top: 595px;
+  left: 262px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.input-group {
+  display: flex;
+  width: 526px;
+  margin-top: 10px;
+}
+
+#credit-card {
+  flex: 10;
+}
+
+#date {
+  flex: 1;
+}
+#cvc {
+  flex: 1;
+}
+
+/* Hide default Date  */
+
+input[type="date"]::before {
+  color: #646e7a;
+  padding-left: 10px;
+  content: attr(placeholder);
+  position: relative;
+  top: 8px;
+  font-family: "Sofia Sans", serif;
+}
+input[type="date"] {
+  color: #edeff2;
+}
+
+/* End of Hiding default Date  */
+
+button {
+  width: 483px;
+  height: 52px;
+  border-radius: 5px;
+  background: #038e7d;
+  color: #ffffff;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  letter-spacing: -0.39600005745887756px;
+  margin-left: 4%;
+  /* margin-bottom: 1%; */
+}
+
+.footer {
+  display: grid;
+  grid-template-rows: 1fr 1 fr;
+  justify-content: center;
+  gap: 10px 0px;
+}
+
+.help-text {
+  color: #747d88;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: -0.009999999776482582px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.part-text {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.8px;
+  letter-spacing: -0.009999999776482582px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+span.small {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  line-height: 1px;
+  position: relative;
+  top: 5px;
+  left: 7px;
+}
+span.symbol {
+  position: relative;
+  top: -1px;
+  left: -11px;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 85px;
+  padding: 5px;
+  gap: 5px;
+  background: #dadada;
+  border-radius: 5%;
+  color: white;
+  width: 150px;
+  font-size: 400;
+}
+
+span.stripe {
+  text-transform: capitalize;
+  font-size: 700;
+}
+/* End of Styling of the Check-out Section */
+
+/*  Styling of the role info section */
+.info {
+  background: #1079bf;
+  color: white;
+  border: 2px solid red;
+  width: 312px;
+  height: 795px;
+  height: 800px;
+  gap: 0px;
+  opacity: 0px;
+  position: relative;
+  top: 0px;
+  left: -68px;
+}
+
+.info {
+  padding: 60px;
+}
+
+.job-role {
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.info .image {
+  width: 50px;
+  border-radius: 50%;
+}
+.cost .large-text {
+  width: 121px;
+  height: 72px;
+  left: 20px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 72px;
+  letter-spacing: -0.014999999664723873px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.cost .super {
+  position: relative;
+  top: -30px;
+}
+.cost :first-child {
+  margin-bottom: 60px;
+}
+
+.cost :last-child {
+  width: 190px;
+  height: 48px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.list li {
+  list-style: none;
+  margin-left: 2px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.check-mark {
+  color: #b8f6ff;
+  font-size: 15px;
+  position: relative;
+  left: -17px;
+  top: 2px;
+}
+
+.check-circles {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #b8f6ff;
+  padding: 10px;
+  color: #b8f6ff;
+  position: relative;
+  top: 7px;
+}
+
+li .bold,
+.client .bold {
+  /* font-family: Lato; */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.007999998517334461px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.client :first-child {
+  margin-top: 40px;
+  margin-bottom: 2px;
+  width: 186px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+.client :last-child {
+  /* margin-top: 40px;
+  margin-bottom: 2px; */
+  /* width: 186px; */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  border-bottom-color: #038e7d;
+  border-bottom-width: 50px;
+}
+
+.agency {
+  font-family: Lato;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 19.2px;
+  letter-spacing: -0.007999998517334461px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.info-content-underline {
+  width: 224px;
+  height: 2px;
+  gap: 0px;
+  opacity: 0.2px;
+  background: #ffffff;
+  margin-bottom: 2rem;
+}
+span.info-content-underline {
+  display: block;
+  width: 180px;
+  height: 4px;
+  opacity: 0.5px;
+  background: #b9f5ff;
+  position: relative;
+  top: -30px;
+}
+
+/*  End of Styling of the role info section */
+
+.content-underline {
+  width: 580px;
+  height: 2px;
+  background: #f5f7fa;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  left: -32px;
+}
