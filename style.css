@@ -43,6 +43,13 @@ a {
   outline: 2px solid #646e7a;
   outline-offset: 13px;
   border-radius: 1px;
+  transition: box-shadow 0.3s ease;
+}
+
+.active a:hover {
+  box-shadow: 0px 0px 0px 10px #038e7d;
+  background: #038e7d;
+  color: white;
 }
 .underline {
   margin: auto;
@@ -237,6 +244,10 @@ button {
   /* margin-bottom: 1%; */
 }
 
+button:hover {
+  background: #01221e;
+}
+
 .footer {
   display: grid;
   grid-template-rows: 1fr 1 fr;
@@ -417,6 +428,10 @@ li .bold,
   border-bottom-width: 50px;
 }
 
+.client p a {
+  color: white;
+}
+
 .agency {
   font-family: Lato;
   font-size: 16px;
@@ -495,4 +510,29 @@ span.wp-pusher {
   margin-bottom: 2rem;
   position: relative;
   left: -32px;
+}
+
+footer p {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 20px;
+}
+footer a {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #31708f;
+}
+
+span.help-text a {
+  color: #038e7d;
 }
